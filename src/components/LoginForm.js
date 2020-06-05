@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 
 class LoginForm extends React.Component {
   constructor() {
@@ -16,11 +16,12 @@ class LoginForm extends React.Component {
     [event.target.name]:  event.target.value})
   }
 
+
   handleSubmit = event => {
     event.preventDefault()
     if(this.state.username && this.state.password){ 
     return  this.props.handleLogin(this.state)
-    } 
+    }
   }
 
   render() {
