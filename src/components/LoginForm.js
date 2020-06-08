@@ -31,7 +31,7 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <form>
+      <form onSubmit={this.handleLogin}>
         <div>
           <label>
             Username
@@ -54,7 +54,7 @@ class LoginForm extends React.Component {
           </label>
         </div>
         <div>
-          <button type="submit" onSubmit={this.handleLogin}>Log in</button>
+          <button type="submit" >Log in</button>
         </div>
       </form>
     );
